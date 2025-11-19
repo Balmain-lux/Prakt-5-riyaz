@@ -1,0 +1,6 @@
+@Prakt_5_riyaz_HostAddress = http://localhost:5071
+
+GET {{Prakt_5_riyaz_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
