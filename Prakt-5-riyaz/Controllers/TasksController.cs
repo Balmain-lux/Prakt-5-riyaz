@@ -36,7 +36,7 @@
 
             if (employeeId.HasValue)
             {
-                query = query.Where(t => t.EmployeeId == employeeId);
+                query = query.Where(t => t.EmployeeID == employeeId);
             }
 
             var tasks = await query.ToListAsync();

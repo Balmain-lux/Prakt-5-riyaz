@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prakt-5-riyaz", "Prakt-5-riyaz\Prakt-5-riyaz.csproj", "{B91E8584-27B1-4F32-8C25-8523BAA3834F}"
 EndProject

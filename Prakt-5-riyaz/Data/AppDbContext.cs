@@ -17,13 +17,13 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<Project>()
             .HasMany(p => p.Tasks)
             .WithOne(t => t.Project)
-            .HasForeignKey(t => t.ProjectId);
+            .HasForeignKey(t => t.ProjectID);
 
         // Связь Сотрудник - Задачи
         modelBuilder.Entity<Employee>()
             .HasMany(e => e.Tasks)
             .WithOne(t => t.Employee)
-            .HasForeignKey(t => t.EmployeeId);
+            .HasForeignKey(t => t.EmployeeID);
 
         // Связь Задача - Комментарии
         modelBuilder.Entity<ProjectTask>()

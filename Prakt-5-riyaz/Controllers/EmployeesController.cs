@@ -93,7 +93,7 @@
         public async Task<ActionResult<IEnumerable<ProjectTask>>> GetEmployeeTasks(int id)
         {
             var tasks = await _context.Tasks
-                .Where(t => t.EmployeeId == id)
+                .Where(t => t.EmployeeID == id)
                 .ToListAsync();
 
             return Ok(tasks);

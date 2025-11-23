@@ -91,7 +91,7 @@ namespace Prakt_5_riyaz.Controllers
         public async Task<ActionResult<IEnumerable<ProjectTask>>> GetProjectTasks(int id)
         {
             var tasks = await _context.Tasks
-                .Where(t => t.ProjectId == id)
+                .Where(t => t.ProjectID == id)
                 .ToListAsync();
 
             return Ok(tasks);
@@ -101,7 +101,7 @@ namespace Prakt_5_riyaz.Controllers
         public async Task<ActionResult<object>> GetProjectStats(int id)
         {
             var tasks = await _context.Tasks
-                .Where(t => t.ProjectId == id)
+                .Where(t => t.ProjectID == id)
                 .ToListAsync();
 
             var stats = new
